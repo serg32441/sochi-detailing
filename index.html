@@ -3,142 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Честная химчистка в Сочи</title>
+    <title>Химчистка Авто Сочи - Джо Шугерман Стиль</title>
     <style>
-        :root {
-            --bg-color: #f4f4f4;
-            --paper-color: #ffffff;
-            --text-color: #333333;
-            --red-text: #d32f2f;
-        }
         body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Georgia', serif; /* Serif for storytelling feel */
+            font-family: 'Georgia', serif; /* Шрифты с засечками, как в книгах */
+            background-color: #fdfdfd;
+            color: #333;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
             max-width: 700px;
             margin: 0 auto;
-            background: var(--paper-color);
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            padding: 40px 20px;
+            background: white;
         }
+        
+        /* Стиль заголовка */
         h1 {
-            font-size: 32px;
+            font-size: 36px;
+            font-weight: bold;
             margin-bottom: 10px;
-            text-align: center;
+            line-height: 1.2;
             color: #000;
         }
+        
+        /* Подзаголовки */
         h2 {
-            font-size: 24px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            font-size: 22px;
+            margin-top: 40px;
+            color: #444;
         }
+        
+        /* Основной текст */
         p {
             font-size: 19px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
+        
+        /* Красный акцентный текст (классика Шугермана) */
+        .highlight {
+            color: #c00000;
+            font-weight: bold;
+        }
+        
+        /* Цитата / Вступление */
         .intro {
-            font-size: 22px;
-            font-weight: bold;
-            text-align: center;
-            color: #555;
-        }
-        .red-text {
-            color: var(--red-text);
-            font-weight: bold;
-        }
-        .story-block {
-            border-left: 4px solid #ddd;
+            border-left: 4px solid #333;
             padding-left: 20px;
             margin: 30px 0;
             font-style: italic;
+            color: #555;
         }
-        .cta-container {
-            text-align: center;
-            margin-top: 40px;
+
+        /* Секция с картинками */
+        .gallery {
+            margin: 50px 0;
             padding: 20px;
-            background: #fffae6;
-            border: 1px dashed #e0c080;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
         }
-        .cta-button {
+        .gallery h3 {
+            text-align: center;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .caption {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: -15px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        /* Кнопка */
+        .cta-box {
+            text-align: center;
+            background: #fffde0; /* Светло-желтый, не яркий */
+            border: 2px solid #e6dbb5;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .btn {
             display: inline-block;
-            background: var(--red-text);
-            color: white;
+            background: #222;
+            color: #fff;
             padding: 15px 30px;
+            text-decoration: none;
             font-size: 20px;
             font-weight: bold;
-            text-decoration: none;
+            font-family: sans-serif;
             border-radius: 5px;
-            margin-top: 10px;
+            transition: background 0.3s;
         }
-        .cta-button:hover {
-            background: #b71c1c;
+        .btn:hover { background: #444; }
+        
+        .signature {
+            margin-top: 50px;
+            font-family: 'Brush Script MT', cursive; /* Имитация подписи */
+            font-size: 40px;
+            color: #555;
+            text-align: right;
         }
-        .guarantee {
-            text-align: center;
-            font-weight: bold;
-            margin: 30px 0;
-            padding: 10px;
-            border: 2px solid #333;
-        }
-        .scarcity {
-            text-align: center;
-            font-size: 16px;
-            color: #666;
-            margin-top: 20px;
-        }
-        /* Mobile adjustments */
+        
+        /* Адаптив */
         @media (max-width: 600px) {
+            h1 { font-size: 28px; }
             .container { padding: 20px; }
-            h1 { font-size: 26px; }
-            p { font-size: 17px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>В этой машине есть одна тайна...</h1>
-        <p class="intro">Я знаю, что она скрывает.</p>
-
-        <p>Вы думаете, что просто моете машину. Но я-то знаю правду.</p>
+        <h1>В этой машине спрятана одна неприятная тайна...</h1>
         
-        <p>Под обивкой сидений, в каждом шве и в складках потолка годами скапливается нечто невидимое. Нечто, что ваш нос уже не замечает, но <span class="red-text">ваш попутчик чувствует.</span></p>
-
-        <h2>Этот запах.</h2>
-        
-        <p>Тот самый, из-за которого перед поездкой на дачу интуитивно открываются все окна. Или тот, что мешает спать, если собака любит спать на заднем сиденье.</p>
-        
-        <p class="story-block">Я не просто "пылесошу" вашу машину. Я переверну её весь мир вверх дном.</p>
-        
-        <p>Я приеду к вам домой, в офис или к пляжу в любой точке Сочи. И начну с самого неприятного: разберу всё, что можно разобрать. Каждый пластик, каждый карман, каждый уголок.</p>
-
-        <h2>Почему я — не просто мойщик?</h2>
-        
-        <p>Потому что я не гонюсь за количеством. Мне важно, чтобы вы улыбнулись.</p>
-        
-        <p>Улыбнулись от звука чистоты. <span class="red-text">"Шшш-шш-ш".</span> Это звук идеально вычищенного пластика под салфеткой. Этот звук продается лучше любых слов.</p>
-        
-        <div class="guarantee">
-            <p>Если результат не заставит вас ахнуть — я сделаю всё заново бесплатно. <br>Или просто уеду, не взяв ни рубля.</p>
+        <div class="intro">
+            <p style="margin:0">Она прячется под ковриками, в складках сидений и в вентиляции. Вы, наверное, даже не подозреваете, что она там есть.</p>
         </div>
 
-        <p>Я работаю вдумчиво. Я не использую дешевую химию, которая потом пахнет аптекой.</p>
-
-        <h2>Но поторопитесь...</h2>
+        <p>Вы можете думать, что ваша машина чистая. Вы моете её каждые две недели. Вы покупаете ароматизаторы. Но ваш <span class="highlight">постоянный пассажир</span> (например, жена или дети) чувствует это.</p>
         
-        <p>Я физически не могу принять больше <strong>двух машин в день</strong>. Иначе я перестану делать идеально и начну делать "просто нормально". А мне это не нужно.</p>
-        
-        <p>На сегодня осталось <strong>ровно одно место</strong>.</p>
+        <p>Они чувствуют этот запах "старой грязи". Запах, от которого хочется открыть окно.</p>
 
-        <div class="cta-container">
-            <p style="margin-top:0; font-size: 18px; font-weight: bold;">Хотите услышать звук "Шшш"?</p>
-            <a href="https://wa.me/79990000000" class="cta-button">Написать мне в WhatsApp</a>
-            <p class="scarcity">Оставьте заявку прямо сейчас, пока тайна не стала частью вас навсегда.</p>
+        <p>Я — тот, кто раскрывает эту тайну. Я не просто "мою". Я провожу хирургическое вмешательство в вашу машину.</p>
+
+        <!-- Галерея с реальными фото -->
+        <div class="gallery">
+            <h3>Примеры работы</h3>
+            <!-- Фото 1 -->
+            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&q=80" alt="Профессиональная чистка авто">
+            <div class="caption">Это то, что мы достаем из обивки сидений...</div>
+            
+            <!-- Фото 2 -->
+            <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?w=800&q=80" alt="Чистый кожаный салон">
+            <div class="caption">После химчистки кожа снова мягкая и как новая.</div>
+            
+            <!-- Фото 3 -->
+            <img src="https://images.unsplash.com/photo-1605218427368-35b820a9a194?w=800&q=80" alt="Глубокая мойка пеной">
+            <div class="caption">Каждая щель прочищена вручную.</div>
+        </div>
+
+        <p>В чем дело? Грязь въедается в ткань на миллиметровую глубину. Обычный пылесос её не берет. Нужна специальная химия и время.</p>
+        
+        <p>Именно столько времени я готов потратить на <span class="highlight">вашу машину</span>.</p>
+
+        <p>Я приеду к вам в Сочи (Адлер, Хоста, Центр, Красная Поляна). Я привезу всё необходимое: профессиональную химию, тряпки, которые не оставляют разводов, и кресло, на котором мне удобно сидеть.</p>
+        
+        <p>Я начну работу. Сниму сиденья. Пропылесошу потолок с лестницы (да, я умею это делать safely).</p>
+
+        <h2>Однако, у меня есть к вам предложение...</h2>
+
+        <p>Я не люблю продавать навязчиво. Мой метод прост: <strong>Я сделаю работу. Вы увидите результат. И только потом мы обсудим цену.</strong></p>
+        
+        <p>Если вам не понравится чистота — я просто уеду. Вы не заплатите <span class="highlight">ни рубля</span>. Я возьму на себя 100% рисков.</p>
+
+        <p>Почему я так делаю? Потому что знаю: однажды увидев результат, вы больше никогда не сможете ездить в грязной машине.</p>
+
+        <div class="cta-box">
+            <p style="margin-top:0; font-weight:bold; font-size:20px;">Внимание: Я работаю один и очень внимательно отношусь к деталям.</p>
+            <p>Я могу взять не более <strong>2-х машин в день</strong>, чтобы сделать всё идеально.</p>
+            <p>На сегодня осталось всего <span class="highlight">одно место</span>.</p>
+            <br>
+            <a href="https://wa.me/79990000000" class="btn">Хочу чистую машину (Написать в WhatsApp)</a>
+        </div>
+
+        <div class="signature">
+            Ваш АвтоМастер
         </div>
     </div>
 </body>
