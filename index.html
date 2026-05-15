@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sochi Mobile Detailing</title>
+    <style>
+        :root {
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --accent: #0071e3;
+            --radius: 24px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            position: fixed; top: 0; width: 100%; height: 48px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            display: flex; justify-content: center; align-items: center; z-index: 1000;
+        }
+        .nav-container { max-width: 980px; width: 100%; display: flex; justify-content: space-between; padding: 0 20px; font-size: 12px; }
+        .nav-logo { font-weight: 600; font-size: 14px; }
+        .nav-link { color: var(--text-primary); text-decoration: none; opacity: 0.8; transition: opacity 0.3s; margin-left: 20px; }
+        .nav-link:hover { opacity: 1; }
+        header { text-align: center; padding: 120px 20px 60px; background: white; }
+        h1 { font-size: 56px; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 10px; background: linear-gradient(135deg, #1d1d1f 0%, #4a4a4a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 24px; color: var(--text-secondary); font-weight: 400; margin-bottom: 30px; }
+        .cta-button { display: inline-block; background: var(--accent); color: white; padding: 12px 24px; border-radius: 980px; text-decoration: none; font-size: 17px; font-weight: 500; transition: background 0.3s; }
+        .cta-button:hover { background: #005bb5; }
+        .container { max-width: 1060px; margin: 60px auto; padding: 0 20px; }
+        .section-title { font-size: 40px; font-weight: 600; margin-bottom: 40px; }
+        .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .card { background: var(--card-bg); border-radius: var(--radius); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; }
+        .card:hover { transform: scale(1.02); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card.full { grid-column: span 3; } .card.half { grid-column: span 1; }
+        .card h3 { font-size: 28px; margin-bottom: 10px; }
+        .card p { color: var(--text-secondary); font-size: 17px; margin-bottom: 20px; }
+        .price-tag { font-size: 32px; font-weight: 700; color: var(--text-primary); margin-top: auto; }
+        .price-sub { font-size: 14px; color: var(--text-secondary); font-weight: 400; }
+        .features { background: white; padding: 80px 20px; text-align: center; margin-top: 60px; }
+        .feature-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; }
+        .feature-item { max-width: 300px; }
+        .feature-icon { font-size: 40px; margin-bottom: 10px; display: block; }
+        .feature-title { font-weight: 600; margin-bottom: 5px; font-size: 19px; }
+        footer { background: #1d1d1f; color: #f5f5f7; padding: 60px 20px; text-align: center; font-size: 12px; }
+        @media (max-width: 768px) { h1 { font-size: 40px; } .hero-subtitle { font-size: 20px; } .bento-grid { grid-template-columns: 1fr; } .card.full, .card.half { grid-column: span 1; } }
+    </style>
+</head>
+<body>
+    <nav><div class="nav-container"><div class="nav-logo">Sochi Detailing</div><div><a href="#services" class="nav-link">Услуги</a><a href="#process" class="nav-link">Материалы</a><a href="#contact" class="nav-link">Контакты</a></div></div></nav>
+    <header>
+        <h1>Ideain chistota.<br>Bezlishnihh klopot.</h1>
+        <p class="hero-subtitle">Premiumnaia khimchistka i polirovka avto s vyiezdok vam v Sotch.</p>
+        <a href="#contact" class="cta-button">Zapisatsia na moiku</a>
+        <div style="margin-top: 50px;">
+            <svg width="100%" height="300" viewBox="0 0 800 300" style="opacity: 0.9;">
+                <defs><linearGradient id="car-gradient" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#333;stop-opacity:1" /><stop offset="50%" style="stop-color:#666;stop-opacity:1" /><stop offset="100%" style="stop-color:#333;stop-opacity:1" /></linearGradient></defs>
+                <path d="M50,200 Q200,100 400,120 T750,200 L750,250 L680,250 Q660,220 640,250 L160,250 Q140,220 120,250 L50,250 Z" fill="url(#car-gradient)" />
+                <path d="M180,140 Q350,60 650,140" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                <circle cx="160" cy="250" r="40" fill="#111" /><circle cx="640" cy="250" r="40" fill="#111" />
+            </svg>
+        </div>
+    </header>
+    <section id="services" class="container">
+        <h2 class="section-title">Uslugi i czeny</h2>
+        <div class="bento-grid">
+            <div class="card half"><div><h3>Kompleks "Ekspres"</h3><p>Idealno dlia podderzhki chistoty. Moyem diski, kola i vsei kouv ot dorozhnoi griazi.</p></div><div><span class="price-tag">2 500 RUBLEI</span><div class="price-sub">Viaim: ~1.5 chasa</div></div></div>
+            <div class="card half"><div><h3>Kouv "Pod kiuch"</h3><p>Polni kompleks: diski, kouv, stiekla, plastikoviie elementi i kondisionier salona.</p></div><div><span class="price-tag">3 800 RUBLEI</span><div class="price-sub">Viaim: ~2.5 chasa</div></div></div>
+            <div class="card full" style="background: #1d1d1f; color: white;"><div style="display: flex; flex-direction: column; align-items: center; text-align: center;"><h3">Glubokaia khimchistka salona</h3><p style="color: #86868b; max-width: 600px;">Polnaia chistka vsieh povrhek: sidienia (razborka po zhelaniu), potolok, diurv, bagazhnik. Udalieniie piaten i zapakhov.</p><div style="margin-top: 20px;"><span class="price-tag" style="color: white;">ot 6 000 RUBLEI</span><div class="price-sub" style="color: #86868b;">Zavisit ot klassa avto</div></div></div></div>
+        </div>
+    </section>
+    <section id="process" class="features">
+        <div class="container"><h2 class="section-title" style="margin-bottom: 60px;">Pochiemu vibiraieiut menia</h2>
+        <div class="feature-grid">
+            <div class="feature-item"><span class="feature-icon">📍</span><div class="feature-title">Vyiiez v liubuiu tochkui</div><p style="color: #666;">Priezhaui k vam domoi ili v oφis v Adlere, Khoste, Centre ili Krasnoi Poliane.</p></div>
+            <div class="feature-item"><span class="feature-icon">🧴</span><div class="feature-title">Tolko premium-himiia</div><p style="color: #666;">Ne vreduii laku i rezine. Ispolziui neutralnyie shampuni i voski.</p></div>
+            <div class="feature-item"><span class="feature-icon">👁️</span><div class="feature-title">Detalizatsiia</div><p style="color: #666;">Chishchiui tam, gde vy daie ne splaniruiete smotret. Shcheli, petli, pod kapotom.</p></div>
+        </div></div>
+    </section>
+    <section id="contact" style="padding: 80px 20px; text-align: center;">
+        <h2 class="section-title">Gotovi zakaсhat chistutu?</h2>
+        <p style="font-size: 19px; color: #666; margin-bottom: 30px;">Naпishite mne v WhatsApp ili Telegram.</p>
+        <a href="#" class="cta-button" style="margin-right: 15px;">WhatsApp</a>
+        <a href="#" class="cta-button" style="background: #0088cc;">Telegram</a>
+        <p style="margin-top: 40px; font-size: 24px; font-weight: 600;"><a href="tel:+79990000000" style="text-decoration: none; color: var(--text-primary);">+7 (999) 000-00-00</a></p>
+    </section>
+    <footer><p>Sochi Mobile Detailing &copy; 2026</p><p style="color: #666; margin-top: 10px;">Rabotauiie ezedniia s 09:00 do 21:00</p></footer>
+</body>
+</html>
