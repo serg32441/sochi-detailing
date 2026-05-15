@@ -3,112 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Химчистка Авто Сочи</title>
+    <title>Честная химчистка в Сочи</title>
     <style>
         :root {
-            --bg: #ffffff;
-            --text: #000000;
-            --accent: #d32f2f;
-            --highlight: #ffeb3b;
+            --bg-color: #f4f4f4;
+            --paper-color: #ffffff;
+            --text-color: #333333;
+            --red-text: #d32f2f;
         }
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.4;
-            padding-bottom: 50px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif; /* Serif for storytelling feel */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
         }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: var(--paper-color);
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
         h1 {
-            font-size: 36px;
-            font-weight: 900;
-            text-transform: uppercase;
-            background: var(--accent);
-            color: white;
-            padding: 20px;
+            font-size: 32px;
+            margin-bottom: 10px;
             text-align: center;
-            margin-top: 20px;
-            border: 3px solid black;
-            box-shadow: 5px 5px 0px #000;
+            color: #000;
         }
-        h2 { font-size: 24px; font-weight: bold; margin-top: 20px; border-bottom: 2px solid black; padding-bottom: 5px; }
-        p { font-size: 18px; margin-bottom: 15px; }
-        .offer-box {
-            background: var(--highlight);
-            border: 2px dashed black;
-            padding: 20px;
-            margin: 20px 0;
-            font-weight: bold;
+        h2 {
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        .intro {
             font-size: 22px;
+            font-weight: bold;
             text-align: center;
+            color: #555;
+        }
+        .red-text {
+            color: var(--red-text);
+            font-weight: bold;
+        }
+        .story-block {
+            border-left: 4px solid #ddd;
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        .cta-container {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #fffae6;
+            border: 1px dashed #e0c080;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--red-text);
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background: #b71c1c;
         }
         .guarantee {
-            border: 3px solid var(--accent);
-            padding: 15px;
-            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            margin: 30px 0;
+            padding: 10px;
+            border: 2px solid #333;
         }
         .scarcity {
-            font-weight: bold;
-            color: var(--accent);
-            font-size: 20px;
             text-align: center;
-            margin: 30px 0;
+            font-size: 16px;
+            color: #666;
+            margin-top: 20px;
         }
-        .btn {
-            display: block;
-            width: 100%;
-            background: var(--accent);
-            color: white;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            padding: 20px 0;
-            text-decoration: none;
-            border: 2px solid black;
-            box-shadow: 5px 5px 0px #000;
-            margin-bottom: 30px;
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 26px; }
+            p { font-size: 17px; }
         }
-        .btn:hover { background: #b71c1c; }
-        ul { font-size: 18px; margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ВАС СТЫДНО ЗА СВОЮ МАШИНУ?</h1>
-        <p>Грязный салон — это не просто грязь. Это ваше время и деньги, которые тают каждый день. Сиденья впитывают грязь, пластик желтеет, а сидеть в такой грязи каждый день — удовольствие так себе.</p>
-        <p>Знаю, у вас нет времени. Поэтому я приеду к вам.</p>
-        
-        <div class="offer-box">
-            СКИДКА 20% ПРИ ЗАЯВКЕ ПРЯМО СЕЙЧАС!
-        </div>
+        <h1>В этой машине есть одна тайна...</h1>
+        <p class="intro">Я знаю, что она скрывает.</p>
 
-        <p>Я приеду к вам домой или в офис в любом районе Сочи. Сочинял сиденья, пропылесосю каждый шов, вытру пластик до состояния нового. Весь процесс — от 3 до 6 часов.</p>
+        <p>Вы думаете, что просто моете машину. Но я-то знаю правду.</p>
         
-        <h2>ЗА ЧТО ВЫ ЗАПЛАТИТЕ 15 000 РУБЛЕЙ:</h2>
-        <ul>
-            <li><strong>Полный демонтаж салона:</strong> Сниму сиденья, почищу пол, заберусь в каждый уголок.</li>
-            <li><strong>Удаление пятен и запахов:</strong> Кровь, вино, сигареты, сырость — всё уйдёт.</li>
-            <li><strong>Багажник:</strong> Чистый багажник — тоже часть работы. Включено.</li>
-            <li><strong>Уход за кожей:</strong> Кожаный салон будет мягким, как новый.</li>
-        </ul>
+        <p>Под обивкой сидений, в каждом шве и в складках потолка годами скапливается нечто невидимое. Нечто, что ваш нос уже не замечает, но <span class="red-text">ваш попутчик чувствует.</span></p>
 
+        <h2>Этот запах.</h2>
+        
+        <p>Тот самый, из-за которого перед поездкой на дачу интуитивно открываются все окна. Или тот, что мешает спать, если собака любит спать на заднем сиденье.</p>
+        
+        <p class="story-block">Я не просто "пылесошу" вашу машину. Я переверну её весь мир вверх дном.</p>
+        
+        <p>Я приеду к вам домой, в офис или к пляжу в любой точке Сочи. И начну с самого неприятного: разберу всё, что можно разобрать. Каждый пластик, каждый карман, каждый уголок.</p>
+
+        <h2>Почему я — не просто мойщик?</h2>
+        
+        <p>Потому что я не гонюсь за количеством. Мне важно, чтобы вы улыбнулись.</p>
+        
+        <p>Улыбнулись от звука чистоты. <span class="red-text">"Шшш-шш-ш".</span> Это звук идеально вычищенного пластика под салфеткой. Этот звук продается лучше любых слов.</p>
+        
         <div class="guarantee">
-            <h3 style="margin-top:0">ГАРАНТИЯ ДЕНЬГИ НАЗАД:</h3>
-            <p>Если вам не понравится результат — я переделаю бесплатно. Если всё равно не устроит — верну 100% денег. Я работаю по принципу: вы не платите, пока не увидите, за что платите.</p>
+            <p>Если результат не заставит вас ахнуть — я сделаю всё заново бесплатно. <br>Или просто уеду, не взяв ни рубля.</p>
         </div>
 
-        <div class="scarcity">
-            ⚠️ ВАЖНО: Я РАБОТАЮ ОДИН.
-            <br>Принимаю не больше 2 машин в день. Качество важнее количества.
-            <br>На сегодня осталось <strong>1 место</strong>.
+        <p>Я работаю вдумчиво. Я не использую дешевую химию, которая потом пахнет аптекой.</p>
+
+        <h2>Но поторопитесь...</h2>
+        
+        <p>Я физически не могу принять больше <strong>двух машин в день</strong>. Иначе я перестану делать идеально и начну делать "просто нормально". А мне это не нужно.</p>
+        
+        <p>На сегодня осталось <strong>ровно одно место</strong>.</p>
+
+        <div class="cta-container">
+            <p style="margin-top:0; font-size: 18px; font-weight: bold;">Хотите услышать звук "Шшш"?</p>
+            <a href="https://wa.me/79990000000" class="cta-button">Написать мне в WhatsApp</a>
+            <p class="scarcity">Оставьте заявку прямо сейчас, пока тайна не стала частью вас навсегда.</p>
         </div>
-
-        <a href="https://wa.me/79990000000" class="btn">ЗАБРОНИРОВАТЬ МЕСТО (НАЖМИ СЮДА)</a>
-
-        <p style="text-align: center; font-size: 14px; color: #666;">
-            *Как только закончу работу на неделю — цена вырастет до рыночной.
-        </p>
     </div>
 </body>
 </html>
